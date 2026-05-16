@@ -181,11 +181,11 @@
 </code></pre>
 <h2 id="embedded-love" tabindex="-1">Embedded LOVE <a class="anchor" href="#embedded-love">#</a></h2>
 <p>We can embed LOVE windows with the <code>{% love %}</code> shortcode.</p>
-<iframe class="love-embed" id="love-iframe-912" src="/love-cookbook/assets/love/love-js" width="300" height="150"></iframe>
+<iframe class="love-embed" id="love-iframe-567" src="/love-cookbook/assets/love/love-js" width="300" height="150"></iframe>
 <script>
-const iframe_912 = document.getElementById('love-iframe-912');
-iframe_912.addEventListener('load', function() {
-iframe_912.contentWindow.postMessage({lua: `love.window.setMode(300, 150) 
+const iframe_567 = document.getElementById('love-iframe-567');
+iframe_567.addEventListener('load', function() {
+iframe_567.contentWindow.postMessage({lua: `love.window.setMode(300, 150) 
 function love.draw()
  love.graphics.printf("this is how we embed love.js", 0, 50, love.graphics.getWidth(), "center")
 end
@@ -206,6 +206,15 @@ end
   </p>
 </footer>
       </article>
+
+      <footer class="footer">
+        <p>Made with love for the community.</p>
+        <div class="footer-links">
+          <a href="https://love2d.org">LÖVE Homepage</a>
+          <a href="https://discord.gg/hHDfpP4a2w">Discord Server</a>
+          <a href="https://github.com/Diminiminim/love-cookbook">Contribute on GitHub</a>
+        </div>
+      </footer>
     </main>
 
   </body>
