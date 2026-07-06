@@ -16,31 +16,31 @@
 <meta name="description" content="Running into errors in your code is an inevitable part of the process and it's important to understand how to read them effectively.">
 <meta name="generator" content="eleventy">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://diminim.github.io/love-cookbook/guides/love/reading-errors/">
+<meta property="og:url" content="https://love2d.recipes/guides/love/reading-errors/">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Reading errors">
 <meta property="og:description" content="Running into errors in your code is an inevitable part of the process and it's important to understand how to read them effectively.">
-<meta property="og:image" content="https://diminim.github.io/love-cookbook/assets/logo.png">
+<meta property="og:image" content="https://love2d.recipes/assets/logo.png">
 <meta property="og:image:alt" content="LÖVE Cookbook">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="https://diminim.github.io/love-cookbook/guides/love/reading-errors/">
+<meta name="twitter:url" content="https://love2d.recipes/guides/love/reading-errors/">
 <meta name="twitter:title" content="Reading errors">
 <meta name="twitter:description" content="Running into errors in your code is an inevitable part of the process and it's important to understand how to read them effectively.">
-<meta name="twitter:image" content="https://diminim.github.io/love-cookbook/assets/logo.png">
+<meta name="twitter:image" content="https://love2d.recipes/assets/logo.png">
 <meta name="twitter:image:alt" content="LÖVE Cookbook">
-<link rel="canonical" href="https://diminim.github.io/love-cookbook/guides/love/reading-errors/">
+<link rel="canonical" href="https://love2d.recipes/guides/love/reading-errors/">
 
-    <script src="/love-cookbook/assets/js/codeblock.js"></script>
-    <script src="/love-cookbook/assets/js/hover_preview.js"></script>
-    <script src="/love-cookbook/assets/js/mobile.js"></script>
+    <script src="/assets/js/codeblock.js"></script>
+    <script src="/assets/js/hover_preview.js"></script>
+    <script src="/assets/js/mobile.js"></script>
 
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/fonts.css">
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/main.css">
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/prism.css">
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/markdown.css">
+    <link rel="stylesheet" href="/assets/styles/fonts.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/prism.css">
+    <link rel="stylesheet" href="/assets/styles/markdown.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -49,10 +49,10 @@
   <body>
     <div class="sidebar">
       <header>
-        <a href="/love-cookbook/">
+        <a href="/">
             <div class="logo">
-                <img class="logo-unhover-img" src="/love-cookbook/assets/logo.png">
-                <img class="logo-hover-img" src="/love-cookbook/assets/logo_hover.png">
+                <img class="logo-unhover-img" src="/assets/logo.png" />
+                <img class="logo-hover-img" src="/assets/logo_hover.png" />
             </div>
 
             <h1>LÖVE Cookbook</h1>
@@ -60,74 +60,230 @@
       </header>
 
       <nav class="table-of-contents">
-        <ul class="chapters"><li class="group-header">Installation<ul class="guides"><li><a class="" href="/love-cookbook/guides/installation/getting-started/">Getting started</a>
-                  </li><li><a class="" href="/love-cookbook/guides/installation/love/">LÖVE</a>
-                  </li><li><a class="" href="/love-cookbook/guides/installation/vscode/">VSCode</a>
-                  </li><li><a class="" href="/love-cookbook/guides/installation/neovim/">Neovim</a>
+        <ul class="chapters"><li class="group-header">Installation<ul class="guides"><li><a
+                      class=""
+                      href="/guides/installation/getting-started/"
+                    >Getting started</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/installation/love/"
+                    >LÖVE</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/installation/vscode/"
+                    >VSCode</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/installation/neovim/"
+                    >Neovim</a>
                   </li></ul>
 
-            </li><li class="group-header">Lua Basics<ul class="guides"><li><a class="" href="/love-cookbook/guides/lua-basics/lua/">Lua</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/variables/">Variables</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/functions/">Functions</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/if-statements/">If-statements</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/tables/">Tables and for-loops</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/gotchas/">Gotchas</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/recap/">Recap</a>
+            </li><li class="group-header">Lua Basics<ul class="guides"><li><a
+                      class=""
+                      href="/guides/lua-basics/lua/"
+                    >Lua</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/variables/"
+                    >Variables</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/functions/"
+                    >Functions</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/if-statements/"
+                    >If-statements</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/tables/"
+                    >Tables and for-loops</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/gotchas/"
+                    >Gotchas</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/recap/"
+                    >Recap</a>
                   </li></ul>
 
-            </li><li class="group-header">Lua Advanced<ul class="guides"><li><a class="" href="/love-cookbook/guides/lua-advanced/require/">Require</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/scope/">Scope</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/modulo/">Modulo</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/nested-for-loops/">Nested for-loops</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/standard-library/">Standard library</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/string-patterns/">String patterns</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/ternary-operators/">Ternary operators</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/metatables/">Metatables</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/coroutines/">Coroutines</a>
+            </li><li class="group-header">Lua Advanced<ul class="guides"><li><a
+                      class=""
+                      href="/guides/lua-advanced/require/"
+                    >Require</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/scope/"
+                    >Scope</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/modulo/"
+                    >Modulo</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/nested-for-loops/"
+                    >Nested for-loops</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/standard-library/"
+                    >Standard library</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/string-patterns/"
+                    >String patterns</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/ternary-operators/"
+                    >Ternary operators</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/metatables/"
+                    >Metatables</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/coroutines/"
+                    >Coroutines</a>
                   </li></ul>
 
-            </li><li class="group-header">LÖVE Introduction<ul class="guides"><li><a class="" href="/love-cookbook/guides/love/drawing-image/">Drawing an image</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/drawing-shapes/">Drawing shapes</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/drawing-text/">Drawing text</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/playing-audio/">Playing audio</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/input/">Input</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/filesystem/">Filesystem</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/deltatime/">Deltatime</a>
-                  </li><li><a class="active" href="/love-cookbook/guides/love/reading-errors/">Reading errors</a>
+            </li><li class="group-header">LÖVE Introduction<ul class="guides"><li><a
+                      class=""
+                      href="/guides/love/drawing-image/"
+                    >Drawing an image</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/drawing-shapes/"
+                    >Drawing shapes</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/drawing-text/"
+                    >Drawing text</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/playing-audio/"
+                    >Playing audio</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/input/"
+                    >Input</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/filesystem/"
+                    >Filesystem</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/deltatime/"
+                    >Deltatime</a>
+                  </li><li><a
+                      class="active"
+                      href="/guides/love/reading-errors/"
+                    >Reading errors</a>
                   </li></ul>
 
-            </li><li class="group-header">Basic Concepts<ul class="guides"><li><a class="" href="/love-cookbook/guides/basic/aabb/">AABB</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/angle-and-distance/">Angle &amp; distance</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/tiles/">Tiles</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/animation/">Animation</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/saving-and-loading/">Saving &amp; loading</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/canvases/">Canvases</a>
+            </li><li class="group-header">Basic Concepts<ul class="guides"><li><a
+                      class=""
+                      href="/guides/basic/aabb/"
+                    >AABB</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/angle-and-distance/"
+                    >Angle &amp; distance</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/tiles/"
+                    >Tiles</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/animation/"
+                    >Animation</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/saving-and-loading/"
+                    >Saving &amp; loading</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/canvases/"
+                    >Canvases</a>
                   </li></ul>
 
-            </li><li class="group-header">Advanced Concepts<ul class="guides"><li><a class="" href="/love-cookbook/guides/advanced/oop/">OOP</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/collision-resolving/">Collision resolution</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/stencils/">Stencils</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/physics/">Physics</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/threads/">Threads</a>
+            </li><li class="group-header">Advanced Concepts<ul class="guides"><li><a
+                      class=""
+                      href="/guides/advanced/oop/"
+                    >OOP</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/collision-resolving/"
+                    >Collision resolution</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/stencils/"
+                    >Stencils</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/physics/"
+                    >Physics</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/threads/"
+                    >Threads</a>
                   </li></ul>
 
-            </li><li class="group-header">Shaders<ul class="guides"><li><a class="" href="/love-cookbook/guides/shaders/introduction/">Shaders</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/compute-shaders/">Compute Shaders</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/box-blur/">Box Blur</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/outlines/">Outlines</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/palette/">Palette</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/pixelation/">Pixelation</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/vertex-shaders/">Vertex Shaders</a>
+            </li><li class="group-header">Shaders<ul class="guides"><li><a
+                      class=""
+                      href="/guides/shaders/introduction/"
+                    >Shaders</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/compute-shaders/"
+                    >Compute Shaders</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/box-blur/"
+                    >Box Blur</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/outlines/"
+                    >Outlines</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/palette/"
+                    >Palette</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/pixelation/"
+                    >Pixelation</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/vertex-shaders/"
+                    >Vertex Shaders</a>
                   </li></ul>
 
-            </li><li class="group-header">Exporting<ul class="guides"><li><a class="" href="/love-cookbook/guides/exporting/distribution/">Distribution</a>
-                  </li><li><a class="" href="/love-cookbook/guides/exporting/web-export/">Web Export</a>
-                  </li><li><a class="" href="/love-cookbook/guides/exporting/build-tools/">Build Tools</a>
+            </li><li class="group-header">Exporting<ul class="guides"><li><a
+                      class=""
+                      href="/guides/exporting/distribution/"
+                    >Distribution</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/exporting/web-export/"
+                    >Web Export</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/exporting/build-tools/"
+                    >Build Tools</a>
                   </li></ul>
 
-            </li><li class="group-header">Recipes<ul class="guides"><li><a class="" href="/love-cookbook/guides/recipes/screen-resizing/">Screen resizing</a>
-                  </li><li><a class="" href="/love-cookbook/guides/recipes/steam/">Steam</a>
-                  </li><li><a class="" href="/love-cookbook/guides/recipes/modding/">Modding</a>
+            </li><li class="group-header">Recipes<ul class="guides"><li><a
+                      class=""
+                      href="/guides/recipes/screen-resizing/"
+                    >Screen resizing</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/recipes/steam/"
+                    >Steam</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/recipes/modding/"
+                    >Modding</a>
                   </li></ul>
 
             </li></ul>
@@ -154,7 +310,7 @@
 <span class="token keyword">end</span>
 </code></pre>
 <p>Running the above code will present you with a nice error message that looks like this:</p>
-<p><img src="/love-cookbook/assets/img/reading-errors/error.png" alt=""></p>
+<p><img src="/assets/img/reading-errors/error.png" alt=""></p>
 <h2 id="error-message-breakdown" tabindex="-1">Error message breakdown <a class="anchor" href="#error-message-breakdown">#</a></h2>
 <p>Let's quickly break down what this means before your eyes glaze over and you close the window without reading it - a common beginner pitfall.</p>
 <p>The most important part is at the very beginning of the second line. <code>main.lua:2</code> means that the error was thrown in the file <code>main.lua</code> on line 2. This is always a good place to start and will usually be where you will have to correct your code in order to resolve the issue. The rest of the line is telling us what the error actually was.</p>
@@ -172,7 +328,7 @@
     love<span class="token punctuation">.</span>graphics<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span>picture<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
 <span class="token keyword">end</span>
 </code></pre>
-<p><img src="/love-cookbook/assets/img/reading-errors/error_drawable_expected.png" alt=""></p>
+<p><img src="/assets/img/reading-errors/error_drawable_expected.png" alt=""></p>
 <p>Here the error is on line 4. Bad argument #1 to 'draw' is referring to the first argument (<code>picture</code>) in the <a href="https://love2d.org/wiki/love.graphics.draw" target="_blank"><code>love.graphics.draw</code></a> call. LÖVE is saying it was expecting a <a href="https://love2d.org/wiki/Drawable" target="_blank"><code>Drawable</code></a> as the first argument but we gave it <code>nil</code> (or nothing). Of course in this case we did give it <em>something</em> so why are we getting this error?</p>
 <p>A close look at the <code>picture</code> variable we're passing through makes it clear that we didn't actually define it anywhere. Instead we meant to pass the <code>image</code> variable!</p>
 <pre><code class="language-lua"><span data-attrs="4"></span><span class="token keyword">local</span> image <span class="token operator">=</span> love<span class="token punctuation">.</span>graphics<span class="token punctuation">.</span><span class="token function">newImage</span><span class="token punctuation">(</span><span class="token string">"assets/whale.png"</span><span class="token punctuation">)</span>
@@ -182,11 +338,11 @@
 <span class="token keyword">end</span>
 </code></pre>
 <p>Changing that line to instead pass through <code>image</code> and rerunning the code shows us a lovely picture of a whale instead of an error.</p>
-<iframe class="love-embed" id="love-iframe-159" src="/love-cookbook/assets/love/love-js" width="800" height="600"></iframe>
+<iframe class="love-embed" id="love-iframe-217" src="/assets/love/love-js" width="800" height="600"></iframe>
 <script>
-const iframe_159 = document.getElementById('love-iframe-159');
-iframe_159.addEventListener('load', function() {
-iframe_159.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
+const iframe_217 = document.getElementById('love-iframe-217');
+iframe_217.addEventListener('load', function() {
+iframe_217.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
 local image = love.graphics.newImage("assets/whale.png")
 function love.draw()
  love.graphics.draw(image, 100, 100)
@@ -224,7 +380,7 @@ end
     <span class="token keyword">end</span>
 <span class="token keyword">end</span>
 </code></pre>
-<p><img src="/love-cookbook/assets/img/reading-errors/error_traceback.png" alt=""></p>
+<p><img src="/assets/img/reading-errors/error_traceback.png" alt=""></p>
 <p>But line 5 is our <code>assert</code>, it's not the direct cause of the bug and we're calling <code>make_whale</code> in many places. So how do we fix this and how do we know which <code>make_whale</code> call was the problematic one?</p>
 <p>Well - below the error message there's a handy thing called a Traceback. This tells us what our program was doing just before it crashed! Starting from the bottom up this tells us the path of execution.</p>
 <p>Starting from the top we can work our way back:</p>
@@ -235,11 +391,11 @@ end
 <li><code>main.lua:18: in function 'load'</code> - aha!</li>
 </ul>
 <p>Our <code>make_whale</code> function was called from line 18 in main.lua's load function and that call was the one that directly led to the error being thrown. Looking back at our code we can see that line 18 looks a little different from the others with a typo: <code>make_whale(imaeg)</code> should be <code>make_whale(image)</code>!</p>
-<iframe class="love-embed" id="love-iframe-73" src="/love-cookbook/assets/love/love-js" width="800" height="600"></iframe>
+<iframe class="love-embed" id="love-iframe-546" src="/assets/love/love-js" width="800" height="600"></iframe>
 <script>
-const iframe_73 = document.getElementById('love-iframe-73');
-iframe_73.addEventListener('load', function() {
-iframe_73.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
+const iframe_546 = document.getElementById('love-iframe-546');
+iframe_546.addEventListener('load', function() {
+iframe_546.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
 local image = love.graphics.newImage("assets/whale.png")
 local whales = {}
 local function make_whale(sprite)

@@ -16,31 +16,31 @@
 <meta name="description" content="AABB stands for &quot;Axis Aligned Bounding Box&quot;, and is a way of checking whether two objects are overlapping.">
 <meta name="generator" content="eleventy">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://diminim.github.io/love-cookbook/guides/basic/aabb/">
+<meta property="og:url" content="https://love2d.recipes/guides/basic/aabb/">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="AABB">
 <meta property="og:description" content="AABB stands for &quot;Axis Aligned Bounding Box&quot;, and is a way of checking whether two objects are overlapping.">
-<meta property="og:image" content="https://diminim.github.io/love-cookbook/assets/logo.png">
+<meta property="og:image" content="https://love2d.recipes/assets/logo.png">
 <meta property="og:image:alt" content="LÖVE Cookbook">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="https://diminim.github.io/love-cookbook/guides/basic/aabb/">
+<meta name="twitter:url" content="https://love2d.recipes/guides/basic/aabb/">
 <meta name="twitter:title" content="AABB">
 <meta name="twitter:description" content="AABB stands for &quot;Axis Aligned Bounding Box&quot;, and is a way of checking whether two objects are overlapping.">
-<meta name="twitter:image" content="https://diminim.github.io/love-cookbook/assets/logo.png">
+<meta name="twitter:image" content="https://love2d.recipes/assets/logo.png">
 <meta name="twitter:image:alt" content="LÖVE Cookbook">
-<link rel="canonical" href="https://diminim.github.io/love-cookbook/guides/basic/aabb/">
+<link rel="canonical" href="https://love2d.recipes/guides/basic/aabb/">
 
-    <script src="/love-cookbook/assets/js/codeblock.js"></script>
-    <script src="/love-cookbook/assets/js/hover_preview.js"></script>
-    <script src="/love-cookbook/assets/js/mobile.js"></script>
+    <script src="/assets/js/codeblock.js"></script>
+    <script src="/assets/js/hover_preview.js"></script>
+    <script src="/assets/js/mobile.js"></script>
 
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/fonts.css">
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/main.css">
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/prism.css">
-    <link rel="stylesheet" href="/love-cookbook/assets/styles/markdown.css">
+    <link rel="stylesheet" href="/assets/styles/fonts.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/prism.css">
+    <link rel="stylesheet" href="/assets/styles/markdown.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -49,10 +49,10 @@
   <body>
     <div class="sidebar">
       <header>
-        <a href="/love-cookbook/">
+        <a href="/">
             <div class="logo">
-                <img class="logo-unhover-img" src="/love-cookbook/assets/logo.png">
-                <img class="logo-hover-img" src="/love-cookbook/assets/logo_hover.png">
+                <img class="logo-unhover-img" src="/assets/logo.png" />
+                <img class="logo-hover-img" src="/assets/logo_hover.png" />
             </div>
 
             <h1>LÖVE Cookbook</h1>
@@ -60,74 +60,230 @@
       </header>
 
       <nav class="table-of-contents">
-        <ul class="chapters"><li class="group-header">Installation<ul class="guides"><li><a class="" href="/love-cookbook/guides/installation/getting-started/">Getting started</a>
-                  </li><li><a class="" href="/love-cookbook/guides/installation/love/">LÖVE</a>
-                  </li><li><a class="" href="/love-cookbook/guides/installation/vscode/">VSCode</a>
-                  </li><li><a class="" href="/love-cookbook/guides/installation/neovim/">Neovim</a>
+        <ul class="chapters"><li class="group-header">Installation<ul class="guides"><li><a
+                      class=""
+                      href="/guides/installation/getting-started/"
+                    >Getting started</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/installation/love/"
+                    >LÖVE</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/installation/vscode/"
+                    >VSCode</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/installation/neovim/"
+                    >Neovim</a>
                   </li></ul>
 
-            </li><li class="group-header">Lua Basics<ul class="guides"><li><a class="" href="/love-cookbook/guides/lua-basics/lua/">Lua</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/variables/">Variables</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/functions/">Functions</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/if-statements/">If-statements</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/tables/">Tables and for-loops</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/gotchas/">Gotchas</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-basics/recap/">Recap</a>
+            </li><li class="group-header">Lua Basics<ul class="guides"><li><a
+                      class=""
+                      href="/guides/lua-basics/lua/"
+                    >Lua</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/variables/"
+                    >Variables</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/functions/"
+                    >Functions</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/if-statements/"
+                    >If-statements</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/tables/"
+                    >Tables and for-loops</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/gotchas/"
+                    >Gotchas</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-basics/recap/"
+                    >Recap</a>
                   </li></ul>
 
-            </li><li class="group-header">Lua Advanced<ul class="guides"><li><a class="" href="/love-cookbook/guides/lua-advanced/require/">Require</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/scope/">Scope</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/modulo/">Modulo</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/nested-for-loops/">Nested for-loops</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/standard-library/">Standard library</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/string-patterns/">String patterns</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/ternary-operators/">Ternary operators</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/metatables/">Metatables</a>
-                  </li><li><a class="" href="/love-cookbook/guides/lua-advanced/coroutines/">Coroutines</a>
+            </li><li class="group-header">Lua Advanced<ul class="guides"><li><a
+                      class=""
+                      href="/guides/lua-advanced/require/"
+                    >Require</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/scope/"
+                    >Scope</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/modulo/"
+                    >Modulo</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/nested-for-loops/"
+                    >Nested for-loops</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/standard-library/"
+                    >Standard library</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/string-patterns/"
+                    >String patterns</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/ternary-operators/"
+                    >Ternary operators</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/metatables/"
+                    >Metatables</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/lua-advanced/coroutines/"
+                    >Coroutines</a>
                   </li></ul>
 
-            </li><li class="group-header">LÖVE Introduction<ul class="guides"><li><a class="" href="/love-cookbook/guides/love/drawing-image/">Drawing an image</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/drawing-shapes/">Drawing shapes</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/drawing-text/">Drawing text</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/playing-audio/">Playing audio</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/input/">Input</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/filesystem/">Filesystem</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/deltatime/">Deltatime</a>
-                  </li><li><a class="" href="/love-cookbook/guides/love/reading-errors/">Reading errors</a>
+            </li><li class="group-header">LÖVE Introduction<ul class="guides"><li><a
+                      class=""
+                      href="/guides/love/drawing-image/"
+                    >Drawing an image</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/drawing-shapes/"
+                    >Drawing shapes</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/drawing-text/"
+                    >Drawing text</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/playing-audio/"
+                    >Playing audio</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/input/"
+                    >Input</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/filesystem/"
+                    >Filesystem</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/deltatime/"
+                    >Deltatime</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/love/reading-errors/"
+                    >Reading errors</a>
                   </li></ul>
 
-            </li><li class="group-header">Basic Concepts<ul class="guides"><li><a class="active" href="/love-cookbook/guides/basic/aabb/">AABB</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/angle-and-distance/">Angle &amp; distance</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/tiles/">Tiles</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/animation/">Animation</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/saving-and-loading/">Saving &amp; loading</a>
-                  </li><li><a class="" href="/love-cookbook/guides/basic/canvases/">Canvases</a>
+            </li><li class="group-header">Basic Concepts<ul class="guides"><li><a
+                      class="active"
+                      href="/guides/basic/aabb/"
+                    >AABB</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/angle-and-distance/"
+                    >Angle &amp; distance</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/tiles/"
+                    >Tiles</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/animation/"
+                    >Animation</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/saving-and-loading/"
+                    >Saving &amp; loading</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/basic/canvases/"
+                    >Canvases</a>
                   </li></ul>
 
-            </li><li class="group-header">Advanced Concepts<ul class="guides"><li><a class="" href="/love-cookbook/guides/advanced/oop/">OOP</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/collision-resolving/">Collision resolution</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/stencils/">Stencils</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/physics/">Physics</a>
-                  </li><li><a class="" href="/love-cookbook/guides/advanced/threads/">Threads</a>
+            </li><li class="group-header">Advanced Concepts<ul class="guides"><li><a
+                      class=""
+                      href="/guides/advanced/oop/"
+                    >OOP</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/collision-resolving/"
+                    >Collision resolution</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/stencils/"
+                    >Stencils</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/physics/"
+                    >Physics</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/advanced/threads/"
+                    >Threads</a>
                   </li></ul>
 
-            </li><li class="group-header">Shaders<ul class="guides"><li><a class="" href="/love-cookbook/guides/shaders/introduction/">Shaders</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/compute-shaders/">Compute Shaders</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/box-blur/">Box Blur</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/outlines/">Outlines</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/palette/">Palette</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/pixelation/">Pixelation</a>
-                  </li><li><a class="" href="/love-cookbook/guides/shaders/vertex-shaders/">Vertex Shaders</a>
+            </li><li class="group-header">Shaders<ul class="guides"><li><a
+                      class=""
+                      href="/guides/shaders/introduction/"
+                    >Shaders</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/compute-shaders/"
+                    >Compute Shaders</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/box-blur/"
+                    >Box Blur</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/outlines/"
+                    >Outlines</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/palette/"
+                    >Palette</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/pixelation/"
+                    >Pixelation</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/shaders/vertex-shaders/"
+                    >Vertex Shaders</a>
                   </li></ul>
 
-            </li><li class="group-header">Exporting<ul class="guides"><li><a class="" href="/love-cookbook/guides/exporting/distribution/">Distribution</a>
-                  </li><li><a class="" href="/love-cookbook/guides/exporting/web-export/">Web Export</a>
-                  </li><li><a class="" href="/love-cookbook/guides/exporting/build-tools/">Build Tools</a>
+            </li><li class="group-header">Exporting<ul class="guides"><li><a
+                      class=""
+                      href="/guides/exporting/distribution/"
+                    >Distribution</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/exporting/web-export/"
+                    >Web Export</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/exporting/build-tools/"
+                    >Build Tools</a>
                   </li></ul>
 
-            </li><li class="group-header">Recipes<ul class="guides"><li><a class="" href="/love-cookbook/guides/recipes/screen-resizing/">Screen resizing</a>
-                  </li><li><a class="" href="/love-cookbook/guides/recipes/steam/">Steam</a>
-                  </li><li><a class="" href="/love-cookbook/guides/recipes/modding/">Modding</a>
+            </li><li class="group-header">Recipes<ul class="guides"><li><a
+                      class=""
+                      href="/guides/recipes/screen-resizing/"
+                    >Screen resizing</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/recipes/steam/"
+                    >Steam</a>
+                  </li><li><a
+                      class=""
+                      href="/guides/recipes/modding/"
+                    >Modding</a>
                   </li></ul>
 
             </li></ul>
@@ -175,11 +331,11 @@ love<span class="token punctuation">.</span>draw <span class="token operator">=<
 <span class="token keyword">end</span>
 </code></pre>
 <p>If you ran the code above you'd see the the following:</p>
-<iframe class="love-embed" id="love-iframe-561" src="/love-cookbook/assets/love/love-js" width="800" height="600"></iframe>
+<iframe class="love-embed" id="love-iframe-286" src="/assets/love/love-js" width="800" height="600"></iframe>
 <script>
-const iframe_561 = document.getElementById('love-iframe-561');
-iframe_561.addEventListener('load', function() {
-iframe_561.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
+const iframe_286 = document.getElementById('love-iframe-286');
+iframe_286.addEventListener('load', function() {
+iframe_286.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
 local button = {
  x = 10,
  y = 20,
@@ -320,11 +476,11 @@ If we add some additional code like:</p>
 <span class="token keyword">end</span>
 </code></pre>
 <p>Then anytime we click the button it'll move! You can try it out below:</p>
-<iframe class="love-embed" id="love-iframe-824" src="/love-cookbook/assets/love/love-js" width="800" height="600"></iframe>
+<iframe class="love-embed" id="love-iframe-67" src="/assets/love/love-js" width="800" height="600"></iframe>
 <script>
-const iframe_824 = document.getElementById('love-iframe-824');
-iframe_824.addEventListener('load', function() {
-iframe_824.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
+const iframe_67 = document.getElementById('love-iframe-67');
+iframe_67.addEventListener('load', function() {
+iframe_67.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
 -- button 'object'
 local button = { 
  x = 10, y = 20, w = 100, h = 32,
@@ -500,11 +656,11 @@ love<span class="token punctuation">.</span>keypressed <span class="token operat
 </code></pre>
 <p>You can try it out below! Press 'Space' to re-create the boxes in new positions.<br>
 Any boxes that overlap will be rendered in pink - the bounding box lines are also drawn to make things clearer.</p>
-<iframe class="love-embed" id="love-iframe-288" src="/love-cookbook/assets/love/love-js" width="800" height="600"></iframe>
+<iframe class="love-embed" id="love-iframe-32" src="/assets/love/love-js" width="800" height="600"></iframe>
 <script>
-const iframe_288 = document.getElementById('love-iframe-288');
-iframe_288.addEventListener('load', function() {
-iframe_288.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
+const iframe_32 = document.getElementById('love-iframe-32');
+iframe_32.addEventListener('load', function() {
+iframe_32.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
 -- check overlapping
 function overlapping(b1, b2)
  return b1.x1 < b2.x2 and b1.x2 > b2.x1 and b1.y1 < b2.y2 and b1.y2 > b2.y1
@@ -643,11 +799,11 @@ love<span class="token punctuation">.</span>draw <span class="token operator">=<
 <span class="token keyword">end</span>
 </code></pre>
 <p>You can try it out below here:</p>
-<iframe class="love-embed" id="love-iframe-781" src="/love-cookbook/assets/love/love-js" width="800" height="600"></iframe>
+<iframe class="love-embed" id="love-iframe-982" src="/assets/love/love-js" width="800" height="600"></iframe>
 <script>
-const iframe_781 = document.getElementById('love-iframe-781');
-iframe_781.addEventListener('load', function() {
-iframe_781.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
+const iframe_982 = document.getElementById('love-iframe-982');
+iframe_982.addEventListener('load', function() {
+iframe_982.contentWindow.postMessage({lua: `love.window.setMode(800, 600) 
 -- check overlapping
 function overlapping(b1, b2)
  return b1.x1 < b2.x2 and b1.x2 > b2.x1 and b1.y1 < b2.y2 and b1.y2 > b2.y1
